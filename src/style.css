@@ -1,0 +1,47 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+#home-page, #about-page, #skill-page, #portfolio-page, #contact-page {
+    min-height: 100vh;
+    background-color: #141416;
+    scroll-snap-align: start;
+}
+
+#home-page img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#about-page img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#skill-page img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#portfolio-page img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#contact-page img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
