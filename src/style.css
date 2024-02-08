@@ -177,6 +177,7 @@ nav {
     gap: 7px;
     font-weight: 600;
     font-size: 20px;
+    z-index: 1;
 }
 
 #code-logo {
@@ -195,6 +196,10 @@ nav {
     border-radius: 5px;
 }
 
+#contact {
+    z-index: 1;
+}
+
 #contact button {
     background-color: #141416;
     border-color: white;
@@ -204,16 +209,83 @@ nav {
     color: white;
     font-weight: 600;
     font-size: 20px;
+    z-index: 1;
 }
 
 
 /* About Page */
-#about-page img{
+#about-image{
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
+#purple-romb2 {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    top: 0px;   
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-about {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#about-heading {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#about-subheading {
+    color: #E4E4E4;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.right-about {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-about p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#cv-download {
+    background-color: #9C27B0;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9C27B0;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 17px;
+}
+
+
+
+
+/* Skill page */
 #skill-page img{
     position: absolute;
     height: 100%;
@@ -231,6 +303,7 @@ nav {
     height: 100%;
     width: 100%;
 }
+
 
 
 /* Media Queries */
