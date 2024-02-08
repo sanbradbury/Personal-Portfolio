@@ -232,3 +232,245 @@ nav {
     width: 100%;
 }
 
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 1200px) {
+    .right-container {
+        top: auto;
+        left: auto;
+        height: auto;
+    }
+    
+    #side-dots {
+        width: 500px;
+    }
+
+    .coding-animation {
+        width: 125px; /* Adjust dimensions for smaller screens */
+        height: 125px;
+        left: 20px; /* Center horizontally */
+        top: 30px; /* Adjust vertical position */
+    }
+
+    #avatar-img {
+        width: 250px; /* Adjust dimensions for smaller screens */
+        height: 250px;
+        top: 40px; /* Adjust vertical position */
+        right: 20px; /* Center horizontally */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #side-dots {
+        width: 400px;
+    }
+
+    #avatar-img {
+        width: 250px; /* Adjust dimensions for smaller screens */
+        height: 250px;
+        top: 60px; /* Adjust vertical position */
+        right: 10px; /* Center horizontally */
+    }
+
+    .left-container {
+        margin: 5px;
+        gap: 5px;
+    }
+
+    #purple-romb {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        left: 45%;
+        bottom: 20px;   
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #side-dots {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .coding-animation {
+        width: 125px; /* Adjust dimensions for smaller screens */
+        height: 125px;
+        left: 60px; /* Center horizontally */
+        top: 50px; /* Adjust vertical position */
+    }
+
+    #avatar-img {
+        width: 250px; /* Adjust dimensions for smaller screens */
+        height: 250px;
+        top: 30px; /* Adjust vertical position */
+        right: 40px; /* Center horizontally */
+    }
+
+    .hero-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .left-container {
+        margin: 5px;
+    }
+
+    #purple-romb {
+        display:none;  
+    }
+
+    #bottom-decor{
+        width: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    #heading {
+        font-size: 40px;
+    }
+
+    .hero-container {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .left-container {
+        margin: 5px;
+        gap: 7px;
+    }
+
+    #paragraphh {
+        font-size: 20px;
+    }
+
+    #about-link {
+        gap: 2px;
+        font-size: 6px;
+    }
+
+    .icon {
+        font-size: 14px;
+    }
+
+    .right-container {
+        top: auto;
+        left: auto;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    #side-dots {
+        width: 100%; /* Adjust dimensions for smaller screens */
+        height: 150px;
+        top: 20px; /* Adjust vertical position */
+    }
+
+    .coding-animation {
+        width: 125px; /* Adjust dimensions for smaller screens */
+        height: 125px;
+        left: 20px; /* Center horizontally */
+        top: 30px; /* Adjust vertical position */
+    }
+
+    #avatar-img {
+        width: 250px; /* Adjust dimensions for smaller screens */
+        height: 250px;
+        top: 0px; /* Adjust vertical position */
+        right: 0px; /* Center horizontally */
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    
+    #bottom-decor{
+        width: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+    }
+
+    #purple-romb {
+        display: block;  
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #heading {
+        font-size: 35px;
+    }
+
+    .hero-container {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .left-container {
+        margin: 5px;
+        gap: 2px;
+    }
+
+    #paragraphh {
+        font-size: 15px;
+    }
+
+    #about-link {
+        gap: 2px;
+        font-size: 6px;
+    }
+
+    .icon {
+        font-size: 14px;
+    }
+
+    .right-container {
+        top: auto;
+        left: auto;
+        height: auto;
+    }
+
+    #side-dots {
+        width: 100%; /* Adjust dimensions for smaller screens */
+        height: 100px;
+        top: 20px; /* Adjust vertical position */
+    }
+
+    .coding-animation {
+        width: 100px; /* Adjust dimensions for smaller screens */
+        height: 100px;
+        left: 20px; /* Center horizontally */
+        top: 30px; /* Adjust vertical position */
+    }
+
+    #avatar-img {
+        width: 225px; /* Adjust dimensions for smaller screens */
+        height: 225px;
+        top: 20px; /* Adjust vertical position */
+        right: 20px; /* Center horizontally */
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    
+    #bottom-decor{
+        width: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+    }
+
+    #purple-romb {
+        display: none;  
+    }
+   
+}
