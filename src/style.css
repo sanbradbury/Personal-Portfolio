@@ -6,6 +6,8 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    padding: 0;
 }
 
 
@@ -15,12 +17,197 @@ body {
     scroll-snap-align: start;
 }
 
-#home-page img{
+/* Home page */
+
+#home-image{
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    z-index: -1;
 }
 
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    margin-top: 100px;
+    margin-left: 30px;
+
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    
+    justify-content: center;
+    margin: 50px;
+}
+
+#heading {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#paragraphh {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+#about-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    height: fit-content;
+    font-weight: 400; 
+    color: #9C27B0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#about-link:hover{
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.right-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#side-dots{
+    height: 250px;
+    width: 800px;
+    z-index: 0;
+    position: relative;
+    top: 40px;
+    left: 0;
+}
+
+
+.coding-animation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 70px;
+}
+  
+.code-animation {
+    width: 20rem;
+    height: 20rem;
+}
+  
+.code-animation .lines path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+}
+
+.code-animation.animating .lines path {
+    animation: coding 350ms ease-out forwards;
+}
+
+#avatar-img {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    top: 10px;
+    right: 90px; 
+}
+
+#purple-romb {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 30%;
+    bottom: 40px;   
+}
+
+#bottom-decor{
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+  
+@keyframes coding {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+  
+.select-all {
+    display: none;
+}
+
+
+
+
+
+/* Nav */
+
+nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    height: fit-content;
+}
+
+#logo-container {
+    display: flex;
+    gap: 7px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#code-logo {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    border: white 1px;
+    border-radius: 10px;
+}
+
+#code-logo img{
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    border: white 1px;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #141416;
+    border-color: white;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/* About Page */
 #about-page img{
     position: absolute;
     height: 100%;
