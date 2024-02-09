@@ -403,6 +403,7 @@ input[type="checkbox"]:checked ~ div {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     
 }
 
@@ -412,6 +413,7 @@ input[type="checkbox"]:checked ~ div {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     
 }
 
@@ -577,6 +579,55 @@ input[type="checkbox"]:checked ~ div {
     .right-about p {
         font-size: 16px;
     }
+
+    /* Tooling */
+
+    input[type="checkbox"] { 
+        height: 60px;
+        width: 60px;
+      }
+      
+      .letter {
+        height: 60px;
+        width: 60px;
+        font-size: 43px;
+      }
+
+      #skill-div i {
+        font-size: 60px; 
+    }
+
+    
+}
+
+@media only screen and (max-width: 550px) {
+    /* Tooling */
+    .skill-top i{
+        top: 20px;
+        right: 60px;
+    }
+
+    input[type="checkbox"] { 
+        height: 50px;
+        width: 50px;
+    }
+      
+    .letter {
+        height: 50px;
+        width: 50px;
+        font-size: 40px;
+    }
+
+    #skill-div i {
+        font-size: 50px;
+    }
+
+    #skill-div p {
+        font-size: 14px;
+    }
+
+
+
     
 }
 
@@ -668,6 +719,31 @@ input[type="checkbox"]:checked ~ div {
     .right-about p {
         font-size: 16px;
     }
+
+    /* Tooling */
+    input[type="checkbox"] { 
+        height: 70px;
+        width: 40px;
+    }
+      
+    .letter {
+        height: 70px;
+        width: 40px;
+        font-size: 41px;
+    }
+
+    #skill-div i {
+        font-size: 50px;
+    }
+
+    #skill-div p {
+        font-size: 14px;
+    }
+
+    .skill-bottom {
+        margin-top: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 376px) {
@@ -767,8 +843,34 @@ input[type="checkbox"]:checked ~ div {
     
     .right-about p {
         font-size: 16px;
+    }  
+}
+
+@media only screen and (max-width: 280px) {
+    .skill-top i{
+        display:none;
     }
+
     
-   
-   
+
+    input[type="checkbox"] { 
+        height: 50px;
+        width: 30px;
+    }
+      
+    .letter {
+        height: 50px;
+        width: 30px;
+        font-size: 39px;
+    }
+
+    #skill-div i {
+        font-size: 45px;
+    }
+
+    ul {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
