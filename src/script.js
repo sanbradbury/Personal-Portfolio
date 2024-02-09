@@ -27,6 +27,15 @@ const animateCode = () => {
       lines[lines.length - 1].addEventListener("animationend", selectAll);
       codeBubble.classList.add("animating");
     };
+
+    const downloadButton = document.getElementById("cv-download");
+    downloadButton.addEventListener("click", () => {
+        const cvFilePath = 'Images/Santana-Bradbury-CV.pdf'; 
+        const link = document.createElement("a");
+        link.href = cvFilePath;
+        link.download = "Santana-Bradbury-CV.pdf";
+        link.click();
+    });
   
     startTyping();
 };
