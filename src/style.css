@@ -1,4 +1,4 @@
-html {
+html, body {
     scroll-snap-type: y mandatory;
 }
 
@@ -441,17 +441,134 @@ input[type="checkbox"]:checked ~ div {
 
 
 /* Portfolio pages */
-
-#portfolio-page img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+#portfolio-page {
+    min-height: calc(100vh - 200px); /* Adjust as needed to leave space for the contact section */
+    background-color: #141416;
+    scroll-snap-align: start;
+    padding-bottom: 100px;
 }
 
-#contact-page img{
+#portfolio-image{
     position: absolute;
-    height: 100%;
+    z-index: 1;
+}
+
+#portfolio-heading{
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.projects-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#left-arrow {
+    display: none;
+}
+
+.projects-main i {
+    color: purple;
+    font-size: 125px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    margin-top: 100px;
+}
+  
+ 
+  
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.media {
+    max-width: 350px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+  
+.media img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    color: #151e3f;
+    transition: all 0.9s ease;
+     
+  }
+
+.layer .inner-text {
+    transition: all 0.9s ease;
+    transform: scale(0.1);
+}
+  
+  
+.inner-text {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+  
+.media:hover .layer {
+    opacity: 0.8;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.media:hover .layer p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+}
+
+/* Contact page */
+#contact-image{
+    position: relative;
+ 
+    z-index: 1;
+}
+
+
+
+#contact-page {
+    /* Ensure correct positioning and sizing */
+    min-height: 100vh; /* Ensure full viewport height */
+    background-color: #141416;
+    scroll-snap-align: start; /* Enable scroll snap */
 }
 
 
