@@ -767,6 +767,27 @@ input[type="checkbox"]:checked ~ div {
         max-height: 130px;
         width: 300px;
     }
+
+    /* Contact */
+        
+    .quote-container i { 
+        font-size: 80px;  
+    }
+    
+    
+    .social-media p {
+        font-size: 40px;
+    }
+
+    
+    .social-images img {
+        width: 250px;
+    }
+ 
+    
+    #disclaimer{
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -890,6 +911,45 @@ input[type="checkbox"]:checked ~ div {
     .wrapper {
         grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); /* Responsive 3-column grid */
         grid-gap: 10px;
+    }
+
+    /* Contact */
+    #quotes-left {
+        top: 24px;
+    }
+    
+    #quotes-right {
+        left: 300px;
+    }
+    
+    .quote-container i {
+        font-size: 70px;  
+    }
+    
+    .quote {
+        width: 400px;
+        height: 150px;
+    }
+    
+    .quote p{
+        font-size: 15px;
+    }
+    
+    #quote-author {
+        font-size: 20px;
+    }
+    
+    .social-media p {
+        font-size: 35px;
+    }
+    
+    .social-images img {
+        width: 200px;
+    }
+    
+    
+    #disclaimer{
+        font-size: 15px;
     }
    
 }
@@ -1024,6 +1084,46 @@ input[type="checkbox"]:checked ~ div {
         margin-top: 10px;
     }
 
+    /* Contact */
+    #quotes-left {
+        top: 24px;
+    }
+    
+    #quotes-right {
+        left: 300px;
+    }
+    
+    .quote-container i {
+        font-size: 60px;  
+    }
+    
+    .quote {
+        width: 375px;
+        height: 120px;
+    }
+    
+    .quote p{
+        font-size: 12px;
+    }
+    
+    #quote-author {
+        font-size: 15px;
+    }
+    
+    .social-media p {
+        font-size: 25px;
+    }
+    
+    .social-images img {
+        width: 150px;
+    }
+
+    #disclaimer{
+        font-size: 10px;
+    }
+
+    
+
 }
 
 @media only screen and (max-width: 376px) {
@@ -1136,6 +1236,46 @@ input[type="checkbox"]:checked ~ div {
         margin-top: 20px;;
     }
 
+    /* Contact */
+    #quotes-left {
+        top: 20px;
+    }
+    
+    #quotes-right {
+        left: 300px;
+        bottom: 30px;
+    }
+    
+    .quote-container i {
+        font-size: 50px;  
+    }
+    
+    .quote {
+        width: 350px;
+        height: 150px;
+    }
+    
+    .quote p{
+        font-size: 15px;
+    }
+    
+    #quote-author {
+        font-size: 20px;
+    }
+    
+    .social-media p {
+        font-size: 30px;
+    }
+    
+    .social-images img {
+        width: 150px;
+    }
+       
+    #disclaimer{
+        font-size: 10px;
+        margin-top: 80px;
+    }
+
     
 }
 
@@ -1166,4 +1306,51 @@ input[type="checkbox"]:checked ~ div {
         align-items: center;
     }
 
+     /* Contact */
+     #quotes-left {
+        top: 20px;
+    }
+    
+    #quotes-right {
+        left: 300px;
+        bottom: 30px;
+    }
+    
+    .quote-container i {
+        font-size: 45px;  
+    }
+    
+    .quote {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .quote p{
+        font-size: 11px;
+    }
+    
+    #quote-author {
+        font-size: 17px;
+    }
+    
+    .social-media p {
+        font-size: 25px;
+    }
+    
+    .social-images img {
+        width: 100px;
+    }
+
+    #email-address {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    /* Tooling */     
+    .letter {
+        height: 60px;
+        width: 25px;
+        font-size: 35px;
+    }
+ 
 }
