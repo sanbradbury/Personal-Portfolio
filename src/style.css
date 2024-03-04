@@ -299,8 +299,7 @@ nav {
 .skill-top {
     z-index: 1;
     padding: 0;
-    margin: 10px; 
-    background: #141416;
+    margin: 10px;   
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -414,8 +413,7 @@ input[type="checkbox"]:checked ~ div {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 
@@ -450,12 +448,20 @@ input[type="checkbox"]:checked ~ div {
     z-index: 0;
 }
 
-#portfolio-heading{
+#portfolio-page {
+    position: relative;
+}
+
+#portfolio-heading {
+    position: absolute;
+    top: 50px; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
     font-weight: 900;
     font-size: 50px;
-    color: white;
     text-align: center;
-    z-index: 3;
 }
 
 .projects-main {
@@ -465,6 +471,7 @@ input[type="checkbox"]:checked ~ div {
     align-items: center;
     gap: 20px;
     z-index: 3;
+    margin-top: 80px;
 
 }
 
@@ -482,33 +489,32 @@ input[type="checkbox"]:checked ~ div {
 
 .gallery {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     font-family: "Inter", sans-serif;
-    margin-top: 100px;
+    margin-top: 20px;
 }
   
  
   
 .wrapper {
-    display: flex;
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive 3-column grid */
+    grid-gap: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 10px;
 }
   
 .media {
-    max-width: 350px;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 250px;
     overflow: hidden;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 2px solid white;
     border-radius: 10px;
 }
@@ -576,7 +582,6 @@ input[type="checkbox"]:checked ~ div {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    margin-top: 50px;
 }
 
 .quote-container {
@@ -633,7 +638,7 @@ input[type="checkbox"]:checked ~ div {
 
 .social-media p {
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -670,8 +675,9 @@ input[type="checkbox"]:checked ~ div {
 
 #disclaimer{
     color: #787878;
-    margin-top: 200px;
+    margin-top: 50px;
     font-size: 20px;
+    z-index: 2;
 }
 
 
@@ -720,6 +726,11 @@ input[type="checkbox"]:checked ~ div {
         height: 100px;
            
     }
+
+    /* Portfolio */
+    .wrapper {
+        max-width: 1100px; /* Adjust as needed */
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -745,6 +756,16 @@ input[type="checkbox"]:checked ~ div {
         position: absolute;
         left: 45%;
         bottom: 20px;   
+    }
+
+    /* Portfolio */
+    .wrapper {
+        max-width: 700px; /* Adjust as needed */
+    }
+
+    .media {
+        max-height: 130px;
+        width: 300px;
     }
 }
 
@@ -820,6 +841,22 @@ input[type="checkbox"]:checked ~ div {
         font-size: 60px; 
     }
 
+    /* Portfolio */
+    .wrapper {
+        max-width: 500px; /* Adjust as needed */
+    }
+
+    .media {
+        max-height: 110px;
+        width: 250px;
+    }
+
+    #portfolio-heading {
+        font-size: 50px;
+    }
+
+
+
     
 }
 
@@ -849,9 +886,12 @@ input[type="checkbox"]:checked ~ div {
         font-size: 14px;
     }
 
-
-
-    
+    /* Portfolio */
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); /* Responsive 3-column grid */
+        grid-gap: 10px;
+    }
+   
 }
 
 @media only screen and (max-width: 450px) {
@@ -967,6 +1007,23 @@ input[type="checkbox"]:checked ~ div {
         margin-top: 20px;
     }
 
+    /* Portfolio */
+    .wrapper {
+        max-width: 350px; /* Adjust as needed */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); /* Responsive 3-column grid */
+        grid-gap: 10px;
+    }
+
+    .media {
+        max-height: 100px;
+        width: 230px;
+    }
+
+    #portfolio-heading {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 376px) {
@@ -1066,7 +1123,20 @@ input[type="checkbox"]:checked ~ div {
     
     .right-about p {
         font-size: 16px;
-    }  
+    }
+    
+    /* Portfolio */
+    .wrapper {
+        max-width: 200px; /* Adjust as needed */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 2fr)); /* Responsive 3-column grid */
+        grid-gap: 10px;
+    }
+
+    #portfolio-heading {
+        margin-top: 20px;;
+    }
+
+    
 }
 
 @media only screen and (max-width: 280px) {
