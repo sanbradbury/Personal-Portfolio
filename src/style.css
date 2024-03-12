@@ -494,7 +494,7 @@ input[type="checkbox"]:checked ~ div {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-family: "Inter", sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     margin-top: 20px;
 }
   
@@ -513,45 +513,62 @@ input[type="checkbox"]:checked ~ div {
 .media {
     max-width: 100%;
     max-height: 250px;
+    min-height: 250px;
     overflow: hidden;
     position: relative;
     border: 2px solid white;
     border-radius: 10px;
+    background-color: #fff;
 }
   
 .media img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: auto;
 }
   
 .layer {
     opacity: 0;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 10px;
     height: 100%;
     background: #fff;
-    color: #151e3f;
+    color: black;
     transition: all 0.9s ease;
-     
-  }
+}
 
 .layer .inner-text {
     transition: all 0.9s ease;
     transform: scale(0.1);
 }
+
+.layer .button-wrapper {
+    margin-top: 10px; 
+}
+
+.layer .button-wrapper button {
+    font-size: inherit; /* Inherit font size from parent */
+    background-color: #545354;
+    color: white;
+    border: 1px solid #545354;
+    border-radius: 5px;
+}
   
   
 .inner-text {
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 1px;
 }
+
   
 .media:hover .layer {
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100%;
     transition: all 0.5s ease;
 }
@@ -731,6 +748,11 @@ input[type="checkbox"]:checked ~ div {
     .wrapper {
         max-width: 1100px; /* Adjust as needed */
     }
+            
+    .inner-text {
+        font-size: 10px;
+    }
+    
 }
 
 @media only screen and (max-width: 900px) {
@@ -788,6 +810,13 @@ input[type="checkbox"]:checked ~ div {
     #disclaimer{
         font-size: 15px;
     }
+
+    .media {
+        max-width: 100%;
+        max-height: 250px;
+    }
+      
+    
 }
 
 @media only screen and (max-width: 700px) {
@@ -874,6 +903,11 @@ input[type="checkbox"]:checked ~ div {
 
     #portfolio-heading {
         font-size: 50px;
+    }
+
+    .media {
+        max-width: 100%;
+        max-height: 250px;
     }
 
 
@@ -1070,15 +1104,27 @@ input[type="checkbox"]:checked ~ div {
     /* Portfolio */
     .wrapper {
         max-width: 350px; /* Adjust as needed */
-        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); /* Responsive 3-column grid */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr)); /* Responsive 3-column grid */
         grid-gap: 10px;
     }
 
     .media {
-        max-height: 100px;
-        width: 230px;
+        max-height: 250px;
     }
-
+      
+    .media img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+      
+    .layer .button-wrapper {
+        margin-top: 5px; 
+    }
+       
+    .inner-text {
+        font-size: 10px;
+    }
+    
     #portfolio-heading {
         font-size: 40px;
         margin-top: 10px;
@@ -1226,11 +1272,13 @@ input[type="checkbox"]:checked ~ div {
     }
     
     /* Portfolio */
-    .wrapper {
-        max-width: 200px; /* Adjust as needed */
-        grid-template-columns: repeat(auto-fill, minmax(100px, 2fr)); /* Responsive 3-column grid */
-        grid-gap: 10px;
+
+    
+    #portfolio-heading {
+        font-size: 40px;
+        margin-top: 10px;
     }
+
 
     #portfolio-heading {
         margin-top: 20px;;
@@ -1256,7 +1304,7 @@ input[type="checkbox"]:checked ~ div {
     }
     
     .quote p{
-        font-size: 15px;
+        font-size: 13px;
     }
     
     #quote-author {
@@ -1312,7 +1360,7 @@ input[type="checkbox"]:checked ~ div {
     }
     
     #quotes-right {
-        left: 300px;
+        left: 200px;
         bottom: 30px;
     }
     
