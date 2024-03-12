@@ -1,1 +1,3 @@
 node_modules linguist-vendored
+src/main.css linguist-vendored
+src/main.css.map linguist-vendored
